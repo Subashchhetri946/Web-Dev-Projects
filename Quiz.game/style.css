@@ -1,0 +1,38 @@
+/* basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #f3dede;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.container {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.screen {
+    display: none;
+    padding: 2rem;
+    text-align: center;
+}
+
+.screen.active {
+    display: block;
+}
+ /* start screen */
+ 
