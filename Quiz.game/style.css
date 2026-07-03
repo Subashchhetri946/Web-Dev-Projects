@@ -35,4 +35,31 @@ body {
     display: block;
 }
  /* start screen */
- 
+ #start-screen h1 {
+    color: #f68e8e;
+    margin-bottom:  20px;
+    font-size: 2.5rem;
+ }
+
+ .quiz-header {
+    margin-bottom: 2rem;
+ }
+
+ #question-text {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+ }
+ .quiz-info {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    margin-bottom: 10px;
+ }
+
+ .answers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
