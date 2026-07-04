@@ -70,3 +70,39 @@ let currentQuestionIndex = 0;
 let score = 0;
 let answersDisabled = false;
 
+totalQuestionsSpan.textContent = quizQuestions.length;
+maxScoreSpan.textContent = quizQuestions.length;
+
+// Event listeners
+startBtn.addEventListener('click', startQuiz);
+restartBtn.addEventListener('click', restartQuiz);
+
+function startQuiz() {
+    console.log("Quiz started");
+    // reset vars
+    currentQuestionIndex = 0;
+    score = 0;
+    scoreSpan.textContent = score;
+
+    startScreen.classList.remove('active');
+    quizScreen.classList.add('active');
+
+    showQuestion();
+}
+
+function showQuestion() {
+    answersDisabled = false;
+
+    const currentQuestion = quizQuestions[currentQuestionIndex];
+    currentQuestionSpan.textContent = currentQuestionIndex + 1;
+    const progressPercent = ((currentQuestionIndex / quizQuestions.length) * 100);
+    progressBar.style.width = progressPercent + '%';
+
+    questionText.textContent = currentQuestion.question;
+
+
+}
+
+function restartQuiz() {
+    console.log("Quiz restarted");
+}
